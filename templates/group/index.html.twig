@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Users{% endblock %}
+
+{% block body %}
+<div>
+
+<a href="/admin/group/new/">Add New Group</a>
+<br><br>
+
+<h2>Groups</h2>
+
+<table class="table">
+<tr>
+    <th>Name</th>
+    <th>Actions</th>
+</tr>
+{% for group in groups %}
+    <tr>
+    <td>{{ group.name }}</td>
+    <td><a href="/admin/group/edit/{{ group.id }}">Edit</a> 
+        | <a href="/admin/group/delete/{{ group.id }}">Delete</a></td>
+    </tr>
+{% endfor %}
+</table>
+
+
+</div>
+{% endblock %}
