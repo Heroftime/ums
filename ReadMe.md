@@ -16,6 +16,9 @@ Simple user management system build using Symfony 4.1
 
 ## How to Run?
 
+### Run Local Webserver
+1) `php bin/console server:run`
+
 ### To access Admin:
 1) After installation is done go to: http://localhost:8000/
 2) Credentials:
